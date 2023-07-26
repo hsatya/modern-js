@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      .btn-clear {
+        width: 100%;
+        text-align: center;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      li {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Events</h1>
+    <img src="./logo192.png" alt="logo" />
+    <form id="item-form">
+      <div class="form-control">
+        <!-- Text Input  -->
+        <input
+          type="text"
+          id="item-input"
+          name="item"
+          placeholder="Enter item"
+        />
+      </div>
+      <select name="priority" id="priority-input" class="form-input">
+        <option value="0">Select Priority</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <input type="checkbox" name="checkbox" id="checkbox" /> Recurring Item
+      <button>+Add Item</button>
+    </form>
+    <ul>
+      <li>Apple <button>x</button></li>
+      <li>Orange <button>x</button></li>
+      <li>Kiwi <button>x</button></li>
+    </ul>
+    <button id="clear" class="btn-clear">Clear All</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
